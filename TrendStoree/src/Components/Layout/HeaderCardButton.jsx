@@ -1,9 +1,9 @@
 import Carticon from '../UI/Carticon'
 import './HeaderCardButton.css'
 
-const HeaderCardButton = () => {
+const HeaderCardButton = ({onShowCart}) => {
   return (
-    <button className="button">
+    <button className="button" onClick={onShowCart}>
         <span className="icon">
             <Carticon/>
         </span>

@@ -2,11 +2,11 @@
 import './Header.css'
 import HeaderCardButton from './HeaderCardButton'
 
-const Header = () => {
+const Header = ({onShowCart}) => {
   return (
     <header className='header'>
     <h1>Trend Store</h1>
-    <HeaderCardButton/>
+    <HeaderCardButton onShowCart={onShowCart}/>
 
     </header>
   )
